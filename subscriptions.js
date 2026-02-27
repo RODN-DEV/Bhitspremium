@@ -146,6 +146,7 @@ function openSubscribeModal(clickedPlan) {
 
 function toggleSubMethodsFromExtend() {
     getEl('contact-buttons-container').classList.remove('hidden');
+    getEl('access-buttons-container').classList.add('hidden'); // Hide Check In button as well
     getEl('extend-btn').classList.add('hidden');
 }
 
