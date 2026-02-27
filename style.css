@@ -23,8 +23,6 @@ body {
     padding-bottom: 20px;
 }
 
-/* ... rest of your CSS from the previous message ... */
-
 /* Loading Screen */
 #loading-screen {
     position: fixed;
@@ -39,8 +37,13 @@ body {
     opacity: 1;
 }
 
-#loading-screen.active { pointer-events: all; }
-#loading-screen.hidden { opacity: 0; }
+#loading-screen.active {
+    pointer-events: all;
+}
+
+#loading-screen.hidden {
+    opacity: 0;
+}
 
 .app-logo-wrapper {
     width: 100px;
@@ -123,8 +126,13 @@ header {
     justify-self: end;
 }
 
-.bhif-txt { color: #ffffff; }
-.sports-txt { color: #009900; }
+.bhif-txt {
+    color: #ffffff;
+}
+
+.sports-txt {
+    color: #009900;
+}
 
 /* Category Title */
 #category-title {
@@ -144,7 +152,8 @@ header {
 }
 
 /* Notification & Share Buttons */
-#notification-btn, #share-btn {
+#notification-btn,
+#share-btn {
     font-size: 26px;
     cursor: pointer;
     position: relative;
@@ -153,8 +162,13 @@ header {
     align-items: center;
 }
 
-#notification-btn { color: var(--accent-yellow); }
-#share-btn { color: #09c; }
+#notification-btn {
+    color: var(--accent-yellow);
+}
+
+#share-btn {
+    color: #09c;
+}
 
 .notif-badge {
     position: absolute;
@@ -266,13 +280,19 @@ header {
 #notification-panel {
     right: -100%;
 }
-#notification-panel.open { right: 0; }
+
+#notification-panel.open {
+    right: 0;
+}
 
 #share-panel {
     left: -100%;
     border-right: 1px solid #444;
 }
-#share-panel.open { left: 0; }
+
+#share-panel.open {
+    left: 0;
+}
 
 .panel-header {
     display: flex;
@@ -372,8 +392,14 @@ header {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .section-header {
@@ -405,7 +431,10 @@ header {
     gap: 5px;
 }
 
-.odds-val { color: #66c; font-weight: bold; }
+.odds-val {
+    color: #66c;
+    font-weight: bold;
+}
 
 /* Menu Grid */
 .menu-grid {
@@ -436,7 +465,9 @@ header {
     color: var(--success-green);
 }
 
-.premium-item i { color: var(--accent-yellow); }
+.premium-item i {
+    color: var(--accent-yellow);
+}
 
 .menu-label {
     font-size: 15px;
@@ -602,7 +633,10 @@ header {
     flex-shrink: 0;
 }
 
-.match-info { flex: 1; min-width: 0; }
+.match-info {
+    flex: 1;
+    min-width: 0;
+}
 
 .match-meta-row {
     display: flex;
@@ -635,7 +669,9 @@ header {
     padding-right: 10px;
 }
 
-.tip-value { color: var(--accent-yellow); }
+.tip-value {
+    color: var(--accent-yellow);
+}
 
 .tip-odds {
     color: #888;
@@ -676,8 +712,13 @@ header {
 }
 
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
 .status-badge {
@@ -692,9 +733,20 @@ header {
     margin: 0;
 }
 
-.st-won { background: var(--success-green); color: white; }
-.st-pending { background: #555566; color: #aaa; }
-.st-lost { background: var(--error-red); color: white; }
+.st-won {
+    background: var(--success-green);
+    color: white;
+}
+
+.st-pending {
+    background: #555566;
+    color: #aaa;
+}
+
+.st-lost {
+    background: var(--error-red);
+    color: white;
+}
 
 #subscription-timer {
     position: fixed;
@@ -710,7 +762,9 @@ header {
     z-index: 1001;
 }
 
-.hidden { display: none !important; }
+.hidden {
+    display: none !important;
+}
 
 .back-btn {
     background: none;
@@ -786,7 +840,9 @@ header {
     margin-bottom: 14px;
 }
 
-.btn-later { background: #555 !important; }
+.btn-later {
+    background: #555 !important;
+}
 
 .close-modal {
     position: absolute;
@@ -849,7 +905,9 @@ header {
     transition: transform 0.1s;
 }
 
-.recaptcha-badge:active { transform: scale(0.98); }
+.recaptcha-badge:active {
+    transform: scale(0.98);
+}
 
 .recaptcha-icon {
     width: 24px;
@@ -878,17 +936,22 @@ header {
     display: block;
     width: 100%;
     padding: 10px;
+    border-bottom: 1px solid #444;
     color: white;
     text-align: left;
     background: none;
     border: none;
     cursor: pointer;
     font-size: 16px;
-    border-bottom: 1px solid #444;
 }
 
-.legal-link:last-child { border: none; }
-.legal-link:hover { background: #3c3c4f; }
+.legal-link:last-child {
+    border: none;
+}
+
+.legal-link:hover {
+    background: #3c3c4f;
+}
 
 .scrollable-text {
     max-height: 300px;
@@ -900,10 +963,14 @@ header {
     margin-bottom: 15px;
 }
 
-.spin-hover:hover svg { animation: spin 1s linear infinite; }
+.spin-hover:hover svg {
+    animation: spin 1s linear infinite;
+}
 
 @keyframes spin {
-    100% { transform: rotate(360deg); }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .sub-badge {
@@ -928,4 +995,13 @@ header {
     background: var(--error-red);
     color: white;
     box-shadow: 0 0 5px rgba(255,68,68,0.5);
+}
+
+/* Footer */
+footer {
+    margin-top: 32px;
+    padding: 1px 1px;
+    border-radius: 4px;
+    border-top: 1px solid #334;
+    text-align: center;
 }
