@@ -162,7 +162,10 @@ function loadCategory(catName) {
         });
     } else {
         dateGroups = predictionDB[catName] || {};
-        if (catName.includes('PLAN') && !catName.includes('LOW') && !catName.includes('HIGH')) startCountdown();
+        if (catName.includes('PLAN') && !catName.includes('LOW') && !catName.includes('HIGH')) {
+            stopCountdown(); // Clear any existing countdown before starting a new one
+            startCountdown();
+        }
     }
 
     const sortedDates = Object.keys(dateGroups).sort((a, b) => new Date(b) - new Date(a));
